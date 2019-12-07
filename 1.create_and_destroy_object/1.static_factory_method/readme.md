@@ -31,7 +31,7 @@ BigInteger.probablePrime() // 솟수를 객체를 생성하는 것을 알 수 �
 ### 하위 타입 반환의 유연성
 본 방식을 이용하면 구현부를 감춘 채로 최소한의 API를 유지할 수 있습니다.
 ```
-class Parent(){
+open class Parent(){
     companion object{
         fun createChild() : Parent{
             return Child()
